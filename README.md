@@ -1,5 +1,8 @@
 # Google Stories Python Project
 
+## Background
+This project was created in 2020 to assist a friend who was an SEO analyst. The challenge faced involved manually searching a list of keywords to determine if they appeared in Google's Top Stories box—a time-consuming task. This tool was developed to automate the process, significantly reducing the manual effort involved by automatically searching for the keywords and recording the results. The automation provided by this tool has proven to be a valuable asset in SEO analysis and efficiency.
+
 ## Overview
 This project automates the gathering of data from Google Stories using web scraping techniques, leveraging the power of Selenium for web automation and gspread for Google Sheets interaction. Designed with a PyQt5-based graphical user interface, it aims to simplify data acquisition and management processes for users.
 
@@ -22,8 +25,7 @@ Ensure Python 3.6 or newer is installed along with Pip for managing Python packa
 
 ### 2. Dependencies Installation
 Install all required dependencies using the following command:
-```bash
-pip install -r requirements.txt
+```bash pip install -r requirements.txt```
 
 ## Selenium WebDriver
 This project uses geckodriver for Firefox to automate web browsing actions. Make sure to download geckodriver and note its path for setup.
@@ -40,9 +42,7 @@ Please be aware that as of [Insert Date], this codebase is deprecated and is no 
 
 ## Usage
 Launch the project by executing:
-```bash
-python main.py
-```
+```bash python main.py```
 The GUI will guide you through importing keywords and starting the scraping process.
 
 ## Contributing
@@ -53,12 +53,10 @@ While this project is deprecated, we welcome contributions or forks that update 
 - **WEBDRIVER_PATH**: This environment variable should be set to the full path of the `geckodriver` executable. It is used in the `setup_driver` function to specify the executable path for the Firefox WebDriver:
 ```python
 path = os.getenv("WEBDRIVER_PATH")
-driver = webdriver.Firefox(executable_path=path, options=firefox_options)
 ```
 
 - **GOOGLE_CREDENTIALS_PATH**: This environment variable should be set to the full path of your Google service account credentials file. It is utilized in the `setup_sheets` function to authenticate with Google APIs:
 ```python
 creds = ServiceAccountCredentials.from_json_keyfile_name(os.getenv("GOOGLE_CREDENTIALS_PATH"), scope)
-client = gspread.authorize(creds)
 ```
 This detail is crucial for ensuring the application can interact with Google Sheets and the Selenium WebDriver as intended.
