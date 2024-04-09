@@ -3,6 +3,9 @@
 ## Background
 This project was created in 2020 to assist a friend who was an SEO analyst. The challenge faced involved manually searching a list of keywords to determine if they appeared in Google's Top Stories box—a time-consuming task. This tool was developed to automate the process, significantly reducing the manual effort involved by automatically searching for the keywords and recording the results. The automation provided by this tool has proven to be a valuable asset in SEO analysis and efficiency.
 
+One of the main reasons this codebase is deprecated is due to changes in Google's schema for Top Stories search results. The original search patterns and methods for scraping pages and locating elements no longer align with these updates, rendering the existing automation less effective.
+
+
 ## Overview
 This project automates the gathering of data from Google Stories using web scraping techniques, leveraging the power of Selenium for web automation and gspread for Google Sheets interaction. Designed with a PyQt5-based graphical user interface, it aims to simplify data acquisition and management processes for users.
 
