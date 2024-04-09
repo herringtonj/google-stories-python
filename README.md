@@ -10,9 +10,11 @@ One of the main reasons this codebase is deprecated is due to changes in Google'
 This project automates the gathering of data from Google Stories using web scraping techniques, leveraging the power of Selenium for web automation and gspread for Google Sheets interaction. Designed with a PyQt5-based graphical user interface, it aims to simplify data acquisition and management processes for users.
 
 ## Key Features
-- **Automated Web Scraping:** Harness Selenium to scrape Google Stories efficiently.
+- **Automated Web Scraping:** Harness Selenium to scrape Google Stories efficiently. Utilizes Beautiful Soup to assist Selenium in parsing and extracting data, providing a powerful combination for web scraping.
 - **Google Sheets Integration:** Easily export and manage scraped data within Google Sheets using gspread.
 - **Graphical User Interface:** Utilize a PyQt5 GUI for straightforward project interaction.
+- **Threading for Enhanced Performance:** Implements threading to make the user interface more responsive and speed up task execution by performing web scraping operations in the background. This allows for parallel processing of multiple keywords, significantly improving the tool's efficiency.
+
 
 ## Prerequisites
 To run this project, you'll need:
