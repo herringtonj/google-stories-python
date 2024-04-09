@@ -1,4 +1,4 @@
-# Project Name: Google Stories Python Project
+# Google Stories Python Project
 
 ## Overview
 This project automates the gathering of data from Google Stories using web scraping techniques, leveraging the power of Selenium for web automation and gspread for Google Sheets interaction. Designed with a PyQt5-based graphical user interface, it aims to simplify data acquisition and management processes for users.
