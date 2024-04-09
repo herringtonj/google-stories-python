@@ -25,7 +25,9 @@ Ensure Python 3.6 or newer is installed along with Pip for managing Python packa
 
 ### 2. Dependencies Installation
 Install all required dependencies using the following command:
-```bash pip install -r requirements.txt```
+```bash 
+pip install -r requirements.txt
+```
 
 ## Selenium WebDriver
 This project uses geckodriver for Firefox to automate web browsing actions. Make sure to download geckodriver and note its path for setup.
@@ -42,7 +44,9 @@ Please be aware that as of [Insert Date], this codebase is deprecated and is no 
 
 ## Usage
 Launch the project by executing:
-```bash python main.py```
+```bash 
+python main.py
+```
 The GUI will guide you through importing keywords and starting the scraping process.
 
 ## Contributing
